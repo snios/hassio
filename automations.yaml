@@ -1,0 +1,25 @@
+- id: '1541591064748'
+  alias: Light on when nios home
+  trigger:
+  - entity_id: device_tracker.nios_oneplus5t
+    from: not_home
+    platform: state
+    to: home
+  condition:
+  - after: sunset
+    condition: sun
+  action:
+  - alias: ''
+    data:
+      entity_id: light.fibaro_system_fgd212_dimmer_2_level_2
+    service: light.turn_on
+- id: '1541591738817'
+  alias: Light off at night
+  trigger:
+  - at: '23:00'
+    platform: time
+  condition: []
+  action:
+  - data:
+      entity_id: light.fibaro_system_fgd212_dimmer_2_level_2
+    service: light.turn_off
