@@ -65,7 +65,7 @@ sensor:
       oneplus_battery:
         friendly_name: Nicklas Telefon
         unit_of_measurement: "%"
-        value_template: '{{ states.device_tracker.nicklas_oneplus.attributes.battery|int }}'
+        value_template: '{{ states.device_tracker.nios_oneplus5t.attributes.battery|int }}'
         device_class: battery
 
   - platform: darksky
