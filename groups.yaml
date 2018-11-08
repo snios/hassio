@@ -1,10 +1,11 @@
-	lights:
-		name: Lampor
-		view: yes
-		entities:
-			- group.lights_hallway
+	
+lights:
+	name: Lampor
+	view: yes
+	entities:
+		- group.lights_hallway
 
-	lights_hallway:
-		name: Hall
-		entities:
-			- light.fibaro_system_fgd212_dimmer_2_level_2
+lights_hallway:
+	name: Hall
+	entities:
+		- light.fibaro_system_fgd212_dimmer_2_level_2
