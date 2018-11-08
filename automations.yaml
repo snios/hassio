@@ -11,7 +11,7 @@
   action:
   - alias: ''
     data:
-      entity_id: light.fibaro_system_fgd212_dimmer_2_level_2
+      entity_id: light.dimmer_hallway_lampetter
     service: light.turn_on
 - id: '1541591738817'
   alias: Light off at night
@@ -21,5 +21,5 @@
   condition: []
   action:
   - data:
-      entity_id: light.fibaro_system_fgd212_dimmer_2_level_2
+      entity_id: light.dimmer_hallway_lampetter
     service: light.turn_off
