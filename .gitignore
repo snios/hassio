@@ -1,6 +1,7 @@
 *
 !*.yaml
 !.gitignore
+!.travis.yml
 *.conf
 *.txt
 *.log
