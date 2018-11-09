@@ -55,7 +55,7 @@ map:
 sun:
 
 # Input booleans
-input_boolan:
+input_boolean:
   home:
     name: Hemma
     initial: false
