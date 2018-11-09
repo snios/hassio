@@ -58,8 +58,8 @@ sun:
 input_boolan:
   home:
     name: Hemma
-	initial: false
-	icon: mdi:home
+    initial: false
+    icon: mdi:home
 
 # Sensors
 sensor:
