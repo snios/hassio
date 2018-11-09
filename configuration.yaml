@@ -54,8 +54,14 @@ map:
 # Track the sun
 sun:
 
-# Sensors
+# Input booleans
+input_boolan:
+	home:
+	name: Hemma
+	initial: false
+	icon: mdi:home
 
+# Sensors
 sensor:
   # Weather prediction
   - platform: yr
