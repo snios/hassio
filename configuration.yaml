@@ -56,16 +56,18 @@ sun:
 
 # Input booleans
 input_boolan:
-	home:
-	name: Hemma
+  home:
+    name: Hemma
 	initial: false
 	icon: mdi:home
 
 # Sensors
 sensor:
-  # Weather prediction
+
+# Weather prediction
   - platform: yr
 
+# Track my phone
   - platform: template
     sensors:
       oneplus_battery:
@@ -74,6 +76,7 @@ sensor:
         value_template: '{{ states.device_tracker.nios_oneplus5t.attributes.battery|int }}'
         device_class: battery
 
+# Darksky weather (mostly for dashboard)
   - platform: darksky
     api_key: !secret darksky_api_key
     language: sv
